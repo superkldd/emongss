@@ -12,7 +12,7 @@ async def on_ready():
     print("ready")
     game = discord.Game("열심히")
     await client.change_presence(status=discord.Status.online, activity=game)
-    twitch = "emogss"
+    twitch = "emongss"
     name = "에몽언니"
     channel = client.get_channel(404964728213995521)
     a = 0
