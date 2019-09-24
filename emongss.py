@@ -17,11 +17,11 @@ async def on_ready():
     channel = client.get_channel(404964728213995521)
     a = 0
     while True:
-        headers = {'Client-ID': 'd3w46tya3886tar4s31enx8f9ya91p'}
+        headers = {'Client-ID': 'v2n7lbn2edlcaylh0qzcjtrhwws025'}
         response = requests.get("https://api.twitch.tv/helix/streams?user_login=" + twitch, headers=headers)
         try:
             if loads(response.text)['data'][0]['type'] == 'live' and a == 0:
-                await channel.send("```" + name + " 님이 방송을 시작하였습니다." + "```")
+                await channel.send("```" + name + " 가 방송을 시작했다 !!! " + "```")
                 a = 1
         except:
             a = 0
