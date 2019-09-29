@@ -60,6 +60,9 @@ async def on_message(message):
         
     if message.content.startswith('!은진언니'):
         await message.channel.send(embed=embed4)
+     
+    if message.content.startswith('!명령어'):
+        await message.channel.send("```현재는 간단한 명령어만 가능합니다.!모카푸,!쏘정언니,!은진언니```")
         
 access_token = os.environ["BOT_TOKEN"]
 client.run(access_token)
